@@ -39,7 +39,7 @@ datos_ventas = [
 app = Flask(__name__)
 
 # Configura la conexión a la base de datos PostgreSQL.
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://iscwweelkjzaxb:e6ca2c5a04810215943444340ca7de96e9d72ee91216f7c8869accb78360b3ca@ec2-3-93-160-246.compute-1.amazonaws.com:5432/dd8pd5va5j5bo8'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://zzhtespbnudbcv:1e9870080a36f665e28884e7c67a1c2f4fb84dafed6bd0ce3f4db3c473721241@ec2-3-93-160-246.compute-1.amazonaws.com:5432/dcfqhpuvgm4ajr'
 db = SQLAlchemy(app)
 
 
@@ -109,4 +109,4 @@ if __name__ == '__main__':
         # Confirmar los cambios (hacer commit) en la base de datos
         db.session.commit()
 
-    app.run(debug=True)
+    app.run()
