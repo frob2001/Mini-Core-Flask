@@ -40,6 +40,7 @@ app = Flask(__name__)
 
 # Configura la conexión a la base de datos PostgreSQL.
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://zzhtespbnudbcv:1e9870080a36f665e28884e7c67a1c2f4fb84dafed6bd0ce3f4db3c473721241@ec2-3-93-160-246.compute-1.amazonaws.com:5432/dcfqhpuvgm4ajr'
+#app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:Felixpro2510@localhost/minicore_flask_db'
 db = SQLAlchemy(app)
 
 
